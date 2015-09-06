@@ -10,7 +10,7 @@
 
 @implementation Leaf
 
--(id) initWithColor:(NSString *)color WithType:(NSString *)type {
+-(id) initWithColor:(NSString *)color type:(NSString *)type {
     self = [super init];
     if (self) {
         _color = [color copy];

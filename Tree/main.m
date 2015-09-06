@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
-        Leaf *leaf = [[Leaf alloc] initWithColor:@"Red" WithType:@"Type"];
+        Leaf *leaf = [[Leaf alloc] initWithColor:@"Red" type:@"Type"];
         [leaf fallDown];
         // git test comment
     }

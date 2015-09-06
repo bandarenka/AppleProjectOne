@@ -12,5 +12,5 @@
 
 @property (copy) NSString *sort;
 
-- (id) initWithSort: (NSString *) sort withColor : (NSString *) color;
+- (id) initWithSort: (NSString *) sort color : (NSString *) color;
 @end

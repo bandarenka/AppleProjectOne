@@ -14,7 +14,7 @@
 @property (copy) NSString *type;
 @property bool isFallen;
 
--(id) initWithColor:(NSString *)color WithType:(NSString *)type;
+-(id) initWithColor:(NSString *)color type:(NSString *)type;
 -(void) fallDown;
 
 @end

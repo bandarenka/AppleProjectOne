@@ -10,7 +10,7 @@
 
 @implementation Apple
 
-- (id) initWithSort: (NSString *) sort withColor : (NSString *) color {
+- (id) initWithSort: (NSString *) sort color : (NSString *) color {
     self = [super initWithColor:color];
     if (self) {
         _sort = [sort copy];
