@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Color.h"
 
 @interface Fruit : NSObject
 
-@property (copy) NSString *color;
+@property Color color;
 @property int nucleusCount;
 @property bool isMatured;
 @property bool isFallen;
 
 -(void) fallDown;
 -(void) mature;
--(id) initWithColor:(NSString *)color;
+-(id) initWithColor:(Color)color;
+-(id)init;
 
 @end

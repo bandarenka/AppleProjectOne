@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841DA93A1B9C81BB00D464D0 /* Color.c in Sources */ = {isa = PBXBuildFile; fileRef = 841DA9381B9C81BB00D464D0 /* Color.c */; };
 		D03FC40F1B98A63300D38289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC40E1B98A63300D38289 /* main.m */; };
 		D03FC4171B98A6E200D38289 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC4161B98A6E200D38289 /* Tree.m */; };
 		D03FC41A1B98A71600D38289 /* AppleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC4191B98A71600D38289 /* AppleTree.m */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		841DA9381B9C81BB00D464D0 /* Color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Color.c; sourceTree = "<group>"; };
+		841DA9391B9C81BB00D464D0 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		D03FC40B1B98A63300D38289 /* Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tree; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FC40E1B98A63300D38289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D03FC4151B98A6E200D38289 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				D03FC4181B98A71600D38289 /* AppleTree.h */,
 				D03FC4191B98A71600D38289 /* AppleTree.m */,
 				D03FC41B1B98A76400D38289 /* Fruit.h */,
+				841DA9381B9C81BB00D464D0 /* Color.c */,
+				841DA9391B9C81BB00D464D0 /* Color.h */,
 				D03FC41C1B98A76400D38289 /* Fruit.m */,
 				D03FC41E1B98A77500D38289 /* Apple.h */,
 				D03FC41F1B98A77500D38289 /* Apple.m */,
@@ -149,6 +154,7 @@
 				D03FC4231B98A78600D38289 /* Leaf.m in Sources */,
 				D03FC40F1B98A63300D38289 /* main.m in Sources */,
 				D03FC4171B98A6E200D38289 /* Tree.m in Sources */,
+				841DA93A1B9C81BB00D464D0 /* Color.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +268,7 @@
 				D03FC4141B98A63300D38289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

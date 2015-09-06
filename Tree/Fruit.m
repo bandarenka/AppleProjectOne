@@ -11,17 +11,22 @@
 @implementation Fruit
 
 
-- (id) initWithColor:(NSString *)color {
+- (id) initWithColor:(Color)color {
     self = [super init];
     if (self) {
-        _color = [color copy];
-        _nucleusCount = random() % 10;
+        _color = color;
+        _nucleusCount = arc4random_uniform(10);
     }
     return self;
 }
+-(id) init {
+    Color color = arc4random_uniform(sizeof(Color));
+    return [self initWithColor:color];
+}
 
-- (void) fallDown {
-    _isFallen = true;
+- (void) fallDown  {
+    self.isFallen = true;
+    
 }
 
 - (void) mature {

@@ -16,6 +16,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
         Leaf *leaf = [[Leaf alloc] initWithColor:@"Red" type:@"Type"];
         [leaf fallDown];
+        NSLog(@"Random rom 1 to 10: %d", arc4random_uniform(10));
+        
         // git test comment
     }
     return 0;

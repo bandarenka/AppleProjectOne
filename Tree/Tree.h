@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Color.h"
+
+@class Leaf;
+@class Fruit;
 
 @interface Tree : NSObject
 
@@ -15,6 +19,7 @@
 @property (copy) NSMutableArray *fruits;
 @property int age;
 
+-(id)initWithHeight:(NSInteger *)height;
 -(int) grow;
 -(int) shake;
 
