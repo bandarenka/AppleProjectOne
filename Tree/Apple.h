@@ -7,10 +7,11 @@
 //
 
 #import "Fruit.h"
+#import "AdditionalTypes.h"
 
 @interface Apple : Fruit
 
-@property (copy) NSString *sort;
+@property AppleSort sort;
 
-- (id) initWithSort: (NSString *) sort color : (NSString *) color;
+- (id) initWithSort: (AppleSort) sort color : (Color) color;
 @end

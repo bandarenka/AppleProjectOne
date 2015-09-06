@@ -7,7 +7,13 @@
 //
 
 #import "Tree.h"
+#import "Leaf.h"
+#import "Apple.h"
 
 @interface AppleTree : Tree
+
+@property AppleSort sort;
+
+-(id)initWithHeight:(int)height sort:(AppleSort)sort;
 
 @end

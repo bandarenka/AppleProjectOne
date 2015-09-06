@@ -21,6 +21,12 @@ typedef enum {
 } Color;
 
 typedef enum {
-    Flat,
-    Needle
+    FLAT,
+    NEEDLE
 } LeafType;
+
+typedef enum {
+    APPLESORT1,
+    APPLESORT2,
+    APPLESORT3
+} AppleSort;

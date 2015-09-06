@@ -16,8 +16,8 @@
     if(self) {
         _height = height;
         _age = 0;
-        _leafs = [NSMutableArray arrayWithCapacity:500 + arc4random_uniform(500)];
-        _fruits = [NSMutableArray arrayWithCapacity:50 + arc4random_uniform(50)];
+        _leafs = [NSMutableArray array];
+        _fruits = [NSMutableArray array];
        
         
     }
@@ -32,6 +32,15 @@
         if(!f.isMatured) {
             f.isMatured = arc4random_uniform(2);
         }
+        
+    }
+    
+    for (Leaf *l in self.leafs) {
+        if (l.color != YELLOW) {
+            if (arc4random_uniform(2)) {
+                l.color = YELLOW;
+            }
+        }
     }
 }
 
@@ -43,7 +52,7 @@
     }
     
     for (Leaf *l in self.leafs) {
-        if(!l.isFallen) {
+        if(!l.isFallen && l.color == YELLOW) {
             l.isFallen = arc4random_uniform(2);
         }
     }
