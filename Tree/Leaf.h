@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AdditionalTypes.h"
 @interface Leaf : NSObject
 
-@property (copy) NSString *color;
-@property (copy) NSString *type;
+@property Color color;
+@property LeafType type;
 @property bool isFallen;
 
--(id) initWithColor:(NSString *)color type:(NSString *)type;
+-(id) initWithColor:(Color)color type:(LeafType)type;
 -(void) fallDown;
 
 @end

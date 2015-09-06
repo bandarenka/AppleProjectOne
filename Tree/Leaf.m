@@ -10,19 +10,17 @@
 
 @implementation Leaf
 
--(id) initWithColor:(NSString *)color type:(NSString *)type {
+-(id) initWithColor:(Color)color type:(LeafType)type {
     self = [super init];
     if (self) {
-        _color = [color copy];
-        _type = [type copy];
+        _color = color;
+        _type = type;
         _isFallen = false;
     }
     return self;
 }
 - (void) fallDown {
-    
     _isFallen = true;
-    NSLog(@"The leaf has fallen");
 }
 
 @end

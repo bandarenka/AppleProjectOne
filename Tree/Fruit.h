@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Color.h"
+#import "AdditionalTypes.h"
 
 @interface Fruit : NSObject
 
