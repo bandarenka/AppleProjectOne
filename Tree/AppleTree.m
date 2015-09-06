@@ -16,7 +16,7 @@
         _sort = sort;
         
         for (int i = 0; i < 500 + arc4random_uniform(500); ++i) {
-            Leaf *l = [[Leaf alloc] initWithColor: GREEN type:FLAT];
+            Leaf *l = [[Leaf alloc] initWithColor:GREEN type:FLAT];
             [self.leafs addObject:l];
         }
         
@@ -28,4 +28,48 @@
     
     return self;
 }
+
+-(void)showDetails {
+    NSLog(@"Object: AppleTree");
+    NSLog(@"Sort: %d", self.sort);
+    NSLog(@"Height: %d", self.height);
+    NSLog(@"Age: %d", self.age);
+    NSLog(@"Number of leaves: %lu", (unsigned long)[self.leafs count]);
+    NSLog(@"Number of fallen leaves: %d", [self countFallenLeaves]);
+    NSLog(@"Number of apples: %lu", (unsigned long)[self.fruits count]);
+    NSLog(@"Number of matured apples: %d", [self countMaturedApples]);
+    NSLog(@"Number of fallen apples: %d", [self countFallenApples]);
+    printf("\n");
+}
+
+-(int)countFallenLeaves {
+    int fallenCount = 0;
+    for (Leaf *l in self.leafs) {
+        if (l.isFallen) {
+            ++fallenCount;
+        }
+    }
+    return fallenCount;
+}
+
+-(int)countMaturedApples {
+    int maturedCount = 0;
+    for (Apple *ap in self.fruits) {
+        if (ap.isMatured) {
+            ++maturedCount;
+        }
+    }
+    return maturedCount;
+}
+
+-(int)countFallenApples {
+    int fallenCount = 0;
+    for (Apple *ap in self.fruits) {
+        if (ap.isFallen) {
+            ++fallenCount;
+        }
+    }
+    return fallenCount;
+}
+
 @end

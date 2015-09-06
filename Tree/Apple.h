@@ -14,4 +14,6 @@
 @property AppleSort sort;
 
 - (id) initWithSort: (AppleSort) sort color : (Color) color;
+
+-(void)showDetails;
 @end

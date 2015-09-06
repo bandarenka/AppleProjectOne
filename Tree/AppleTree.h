@@ -16,4 +16,6 @@
 
 -(id)initWithHeight:(int)height sort:(AppleSort)sort;
 
+
+-(void)showDetails;
 @end

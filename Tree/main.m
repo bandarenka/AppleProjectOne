@@ -7,16 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Leaf.h"
+#import "AdditionalTypes.h"
+#import "AppleTree.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
-        Leaf *leaf = [[Leaf alloc] initWithColor:@"Red" type:@"Type"];
-        [leaf fallDown];
-        NSLog(@"Random rom 1 to 10: %d", arc4random_uniform(10));
+        AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
+        [appTree showDetails];
+        for (int i = 0; i < 3; ++i) {
+            [appTree growForAge:2 Height:2];
+            [appTree showDetails];
+            
+            [appTree shake];
+            [appTree showDetails];
+        }
         
         
         

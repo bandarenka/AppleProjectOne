@@ -23,4 +23,12 @@
     _isFallen = true;
 }
 
+-(void)showDetails {
+    NSLog(@"Object: Leaf");
+    NSLog(@"Type: %d", self.type);
+    NSLog(@"Color: %d", self.color);
+    NSLog(@"Is fallen: %d", self.isFallen);
+    NSLog(@"");
+}
+
 @end

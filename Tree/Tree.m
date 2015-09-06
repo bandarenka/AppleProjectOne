@@ -26,6 +26,7 @@
 }
 
 -(void) growForAge:(int)age Height:(int)height {
+    NSLog(@"Growing...");
     self.age += age;
     self.height += height;
     for (Fruit *f in self.fruits) {
@@ -45,6 +46,7 @@
 }
 
 -(void)shake {
+    NSLog(@"Shaking...");
     for (Fruit *f in self.fruits) {
         if(f.isMatured) {
             f.isFallen = true;

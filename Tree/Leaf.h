@@ -17,4 +17,6 @@
 -(id) initWithColor:(Color)color type:(LeafType)type;
 -(void) fallDown;
 
+-(void)showDetails;
+
 @end

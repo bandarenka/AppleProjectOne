@@ -17,4 +17,15 @@
     }
     return self;
 }
+
+-(void)showDetails {
+    NSLog(@"Object: Apple");
+    NSLog(@"Sort: %d", self.sort);
+    NSLog(@"Color: %d", self.color);
+    NSLog(@"Number of nucleas: %d", self.nucleusCount);
+    NSLog(@"Is matured: %d", self.isMatured);
+    NSLog(@"Is fallen: %d", self.isFallen);
+    NSLog(@"");
+
+}
 @end
