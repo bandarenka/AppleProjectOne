@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionalTypes.h"
 #import "AppleTree.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
         AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
+        
+        Leaf *l = [appTree.leafs firstObject];
+        [l showDetails];
+        
+        Apple *app = [appTree.fruits firstObject];
+        [app showDetails];
+        
         [appTree showDetails];
         for (int i = 0; i < 3; ++i) {
             [appTree growForAge:2 Height:2];

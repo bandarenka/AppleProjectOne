@@ -25,7 +25,7 @@
     NSLog(@"Number of nucleas: %d", self.nucleusCount);
     NSLog(@"Is matured: %d", self.isMatured);
     NSLog(@"Is fallen: %d", self.isFallen);
-    NSLog(@"");
+    printf("\n");
 
 }
 @end
