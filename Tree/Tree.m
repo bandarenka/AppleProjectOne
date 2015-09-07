@@ -48,8 +48,8 @@
 -(void)shake {
     NSLog(@"Shaking...");
     for (Fruit *f in self.fruits) {
-        if(f.isMatured) {
-            f.isFallen = true;
+        if(!f.isFallen && f.isMatured) {
+            [f fallDown];
         }
     }
     
