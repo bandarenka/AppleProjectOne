@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		841DA93D1B9C898500D464D0 /* AdditionalTypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 841DA93B1B9C898500D464D0 /* AdditionalTypes.c */; };
+		8448F59C1BA1E0CA0041930D /* Basket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448F59B1BA1E0CA0041930D /* Basket.m */; };
 		D03FC40F1B98A63300D38289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC40E1B98A63300D38289 /* main.m */; };
 		D03FC4171B98A6E200D38289 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC4161B98A6E200D38289 /* Tree.m */; };
 		D03FC41A1B98A71600D38289 /* AppleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC4191B98A71600D38289 /* AppleTree.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		841DA93B1B9C898500D464D0 /* AdditionalTypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AdditionalTypes.c; sourceTree = "<group>"; };
 		841DA93C1B9C898500D464D0 /* AdditionalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionalTypes.h; sourceTree = "<group>"; };
+		8448F59A1BA1E0CA0041930D /* Basket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basket.h; sourceTree = "<group>"; };
+		8448F59B1BA1E0CA0041930D /* Basket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Basket.m; sourceTree = "<group>"; };
 		D03FC40B1B98A63300D38289 /* Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tree; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03FC40E1B98A63300D38289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D03FC4151B98A6E200D38289 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				D03FC40E1B98A63300D38289 /* main.m */,
+				8448F59A1BA1E0CA0041930D /* Basket.h */,
+				8448F59B1BA1E0CA0041930D /* Basket.m */,
 				D03FC4151B98A6E200D38289 /* Tree.h */,
 				D03FC4161B98A6E200D38289 /* Tree.m */,
 				D03FC4181B98A71600D38289 /* AppleTree.h */,
@@ -153,6 +158,7 @@
 				D03FC41D1B98A76400D38289 /* Fruit.m in Sources */,
 				D03FC41A1B98A71600D38289 /* AppleTree.m in Sources */,
 				D03FC4231B98A78600D38289 /* Leaf.m in Sources */,
+				8448F59C1BA1E0CA0041930D /* Basket.m in Sources */,
 				D03FC40F1B98A63300D38289 /* main.m in Sources */,
 				D03FC4171B98A6E200D38289 /* Tree.m in Sources */,
 			);
