@@ -20,5 +20,6 @@
 -(void) mature;
 -(id) initWithColor:(Color)color;
 -(id)init;
+-(void)showDetails;
 
 @end

@@ -32,4 +32,16 @@
 -(void)addFruit:(Fruit *)fruit {
     [basket addObject:fruit];
 }
+
+-(void) printContent {
+    NSLog(@"Basket contains %lu fruits", (unsigned long)[basket count]);
+    NSLog(@"Items: ");
+    int itemNumber = 1;
+    for (Fruit *f in basket) {
+        printf("\n");
+        NSLog(@"Frruit #%d", itemNumber++);
+        [f showDetails];
+        
+    }
+}
 @end

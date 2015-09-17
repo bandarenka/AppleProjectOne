@@ -18,6 +18,10 @@
     return self;
 }
 
+- (id) init {
+    return [self initWithSort:arc4random_uniform(sizeof(AppleSort)) color:arc4random_uniform(sizeof(Color))];
+}
+
 -(void)showDetails {
     NSLog(@"Object: Apple");
     NSLog(@"Sort: %d", self.sort);

@@ -32,5 +32,8 @@
 - (void) mature {
     _isMatured = true;
 }
+-(void)showDetails {
+    
+}
 
 @end
