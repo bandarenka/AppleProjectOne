@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		841DA93D1B9C898500D464D0 /* AdditionalTypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 841DA93B1B9C898500D464D0 /* AdditionalTypes.c */; };
+		8448E8FC1BAACD2E008A1F92 /* TreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448E8FB1BAACD2E008A1F92 /* TreeTests.m */; };
 		8448F59C1BA1E0CA0041930D /* Basket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448F59B1BA1E0CA0041930D /* Basket.m */; };
 		8448F5A21BA1E6410041930D /* BasketIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448F5A11BA1E6410041930D /* BasketIterator.m */; };
 		D03FC40F1B98A63300D38289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03FC40E1B98A63300D38289 /* main.m */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		841DA93B1B9C898500D464D0 /* AdditionalTypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AdditionalTypes.c; sourceTree = "<group>"; };
 		841DA93C1B9C898500D464D0 /* AdditionalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionalTypes.h; sourceTree = "<group>"; };
+		8448E8FA1BAACD2E008A1F92 /* TreeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTests.h; sourceTree = "<group>"; };
+		8448E8FB1BAACD2E008A1F92 /* TreeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTests.m; sourceTree = "<group>"; };
 		8448F59A1BA1E0CA0041930D /* Basket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basket.h; sourceTree = "<group>"; };
 		8448F59B1BA1E0CA0041930D /* Basket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Basket.m; sourceTree = "<group>"; };
 		8448F59D1BA1E2170041930D /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
@@ -63,9 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8448E8F91BAACCDD008A1F92 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8448E8FA1BAACD2E008A1F92 /* TreeTests.h */,
+				8448E8FB1BAACD2E008A1F92 /* TreeTests.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
 		D03FC4021B98A63300D38289 = {
 			isa = PBXGroup;
 			children = (
+				8448E8F91BAACCDD008A1F92 /* UnitTests */,
 				D03FC40D1B98A63300D38289 /* Tree */,
 				D03FC40C1B98A63300D38289 /* Products */,
 			);
@@ -161,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841DA93D1B9C898500D464D0 /* AdditionalTypes.c in Sources */,
+				8448E8FC1BAACD2E008A1F92 /* TreeTests.m in Sources */,
 				D03FC4201B98A77500D38289 /* Apple.m in Sources */,
 				8448F5A21BA1E6410041930D /* BasketIterator.m in Sources */,
 				D03FC41D1B98A76400D38289 /* Fruit.m in Sources */,
