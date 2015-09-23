@@ -13,7 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-     /*   AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
+        AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
         
         Leaf *l = [appTree.leafs firstObject];
         [l showDetails];
@@ -23,16 +23,18 @@ int main(int argc, const char * argv[]) {
         
         [appTree showDetails];
         for (int i = 0; i < 3; ++i) {
-            [appTree growForAge:2 Height:2];
+            int maturedCount = [appTree growForAge:2 Height:2];
             [appTree showDetails];
+            NSLog(@"Count of matured apples: %d", maturedCount);
             
-            [appTree shake];
+            int fallenCount = [appTree shake];
             [appTree showDetails];
+            NSLog(@"Count of fallen apples: %d", fallenCount);
         }
         
-        */
         
-        Basket *basket = [[Basket alloc] init];
+        
+       /* Basket *basket = [[Basket alloc] init];
         for(int i = 0; i < 10; ++i) {
             [basket addFruit:[[Apple alloc] init]];
         }
@@ -44,6 +46,7 @@ int main(int argc, const char * argv[]) {
             Apple *currApple = (Apple *) [iterator next];
             [currApple showDetails];
         }
+        */
     }
     return 0;
 }

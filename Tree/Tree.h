@@ -21,7 +21,7 @@
 @property int age;
 
 -(id)initWithHeight:(int)height;
--(void) growForAge:(int)age Height:(int)height;
--(void) shake;
-
+-(int) growForAge:(int)age Height:(int)height;
+-(int) shake;
+-(int) countFruits;
 @end

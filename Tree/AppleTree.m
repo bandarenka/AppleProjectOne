@@ -72,4 +72,16 @@
     return fallenCount;
 }
 
+-(int)shake {
+    int fallenCountBeforeShake = [self countFallenApples];
+    [super shake];
+    return [self countFallenApples] - fallenCountBeforeShake;
+}
+
+-(int)growForAge:(int)age Height:(int)height {
+    int maturedCountBeforeShake = [self countMaturedApples];
+    [super growForAge:age Height:height];
+    return [self countMaturedApples] - maturedCountBeforeShake;
+}
+
 @end
