@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "AppleTree.h"
 #import "Basket.h"
+#import "Orange.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
+        /*AppleTree * appTree = [[AppleTree alloc] initWithHeight:10 sort:APPLESORT1];
         
         Leaf *l = [appTree.leafs firstObject];
         [l showDetails];
@@ -32,7 +33,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Count of fallen apples: %d", fallenCount);
         }
         
-        
+        */
         
        /* Basket *basket = [[Basket alloc] init];
         for(int i = 0; i < 10; ++i) {
@@ -47,6 +48,12 @@ int main(int argc, const char * argv[]) {
             [currApple showDetails];
         }
         */
+        
+        Apple *ap1 = [[Apple alloc] init];
+        Orange *or1 = [[Orange alloc] init];
+        NSLog(@"%@", [ap1 showDetailsInString]);
+        NSLog(@"%@", [or1 showDetailsInString]);
+        
     }
     return 0;
 }

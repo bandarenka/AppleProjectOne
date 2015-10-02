@@ -32,4 +32,20 @@
     printf("\n");
 
 }
+
+-(NSString *)showDetailsInString {
+    NSMutableString *result = [[NSMutableString alloc] init];
+    [result appendString:@"Object: Apple\n"];
+    [result appendFormat:@"Sort: %d \n", self.sort];
+    [result appendFormat:@"Color: %d \n", self.color];
+    [result appendFormat:@"Number of nucleas: %d \n", self.nucleusCount];
+    [result appendFormat:@"Is matured: %d \n", self.isMatured];
+    [result appendFormat:@"Is fallen: %d \n", self.isFallen];
+    return  [result stringByAppendingFormat:@"\n"];
+}
+
+-(NSString *)showName {
+    return @"Apple";
+}
+
 @end

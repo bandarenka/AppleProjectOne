@@ -36,4 +36,13 @@
     
 }
 
+-(NSString *)showName {
+    return @"Base fruit";
+}
+
+-(NSString *)showDetailsInString {
+    return @"Not implemented";
+}
+
+
 @end

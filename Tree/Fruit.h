@@ -21,5 +21,7 @@
 -(id) initWithColor:(Color)color;
 -(id)init;
 -(void)showDetails;
+-(NSString *)showDetailsInString;
+-(NSString *)showName;
 
 @end
